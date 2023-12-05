@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backlogo4">
+
+    <!-- 로고 이미지뷰 -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="500dp"
+        android:layout_height="700dp"
+        android:src="@drawable/whitelogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535" />
+
+    <!-- 버튼을 감싸는 수평 레이아웃 추가 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 상단으로 스크롤하는 버튼 -->
+        <Button
+            android:id="@+id/Button_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FF00"
+            android:text="작물 선택"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:onClick="onButton1Click"
+            android:clickable="true" />
+
+        <!-- 하단으로 스크롤하는 버튼 -->
+        <Button
+            android:id="@+id/Button_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#DDDDDD"
+            android:text="이력 관리"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:onClick="onButton2Click"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <!-- 딸기 이미지버튼 -->
+    <ImageButton
+        android:id="@+id/strawberry_btn"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="280dp"
+        android:background="@android:color/transparent"
+        android:padding="1dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/strawberry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 토마토 이미지버튼 -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

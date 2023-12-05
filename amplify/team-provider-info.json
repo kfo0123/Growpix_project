@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-growpix-dev-134858-authRole",
+      "UnauthRoleArn": "arn:aws:iam::156532240109:role/amplify-growpix-dev-134858-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::156532240109:role/amplify-growpix-dev-134858-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-growpix-dev-134858-deployment",
+      "UnauthRoleName": "amplify-growpix-dev-134858-unauthRole",
+      "StackName": "amplify-growpix-dev-134858",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:156532240109:stack/amplify-growpix-dev-134858/7046ade0-9260-11ee-b4fa-02ca3bd37eb0",
+      "AmplifyAppId": "dm0r7bucngnx7"
+    },
+    "categories": {
+      "auth": {
+        "growpixa72cff69": {}
+      }
+    }
+  }
+}

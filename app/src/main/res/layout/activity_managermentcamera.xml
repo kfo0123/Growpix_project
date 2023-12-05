@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backlogo4">
+
+    <!-- 로고 이미지뷰 -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="500dp"
+        android:layout_height="700dp"
+        android:src="@drawable/whitelogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535" />
+
+    <!-- 두 번째 텍스트 이미지뷰 -->
+
+    <!-- 두 번째 텍스트 텍스트뷰 -->
+    <ImageView
+        android:id="@+id/stselect2"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <!-- 뒤로가기 텍스트뷰 -->
+    <TextView
+        android:id="@+id/textSelect2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="관리하기"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/stselect2"
+        app:layout_constraintEnd_toEndOf="@id/stselect2"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@id/stselect2"
+        app:layout_constraintTop_toTopOf="@id/stselect2"
+        app:layout_constraintVertical_bias="0.464" />
+
+    <TextView
+        android:id="@+id/mainback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.7"
+        android:text="back"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints" />
+
+    <!-- 카메라 선택 이미지뷰 -->
+
+    <!-- 카메라 선택 텍스트뷰 -->
+    <ImageView
+        android:id="@+id/managermentchoice"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/select2"
+        android:clickable="true"
+        android:onClick="onCameraChoiceClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <TextView
+        android:id="@+id/textcamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카메라 선택"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@id/managermentchoice"
+        app:layout_constraintEnd_toEndOf="@id/managermentchoice"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@id/managermentchoice"
+        app:layout_constraintTop_toTopOf="@id/managermentchoice"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <!-- 갤러리 선택 이미지뷰 -->
+
+    <!-- 갤러리 선택 텍스트뷰 -->
+    <ImageView
+        android:id="@+id/managermentchoice2"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/select2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762" />
+
+    <TextView
+        android:id="@+id/textcamera2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="갤러리 선택"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@id/managermentchoice2"
+        app:layout_constraintEnd_toEndOf="@id/managermentchoice2"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@id/managermentchoice2"
+        app:layout_constraintTop_toTopOf="@id/managermentchoice2"
+        app:layout_constraintVertical_bias="0.506" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

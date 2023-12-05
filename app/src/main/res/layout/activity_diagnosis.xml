@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backlogo4"
+    android:padding="16dp">
+
+    <!-- 이미지뷰 -->
+
+    <!-- 텍스트뷰 -->
+    <ImageView
+        android:id="@+id/diagnosisimageView"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@drawable/box_border2"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_below="@id/diagnosisimageView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- 로고 이미지뷰 -->
+
+    <!-- 뷰페이저 추가 -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSelect"
+        android:layout_marginTop="15dp" >
+
+        <!-- 뷰페이저에 들어갈 내용을 추가할 수 있습니다. -->
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="500dp"
+            android:layout_height="700dp"
+            android:src="@drawable/whitelogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.535" />
+    </androidx.viewpager.widget.ViewPager>
+
+    <!-- 홈으로 이동 버튼 -->
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/box_border"
+        android:text="홈 이동"
+        android:textColor="#000000" />
+
+</RelativeLayout>

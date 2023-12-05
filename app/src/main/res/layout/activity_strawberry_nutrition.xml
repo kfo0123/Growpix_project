@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/background_light">
+
+    <!-- 수평으로 나타나는 버튼을 감싸는 LinearLayout 추가 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 상단으로 스크롤 이동하는 버튼 -->
+        <Button
+            android:id="@+id/Button_1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#00FF00"
+            android:text="딸기 키우기"
+            android:textSize="25sp"
+            android:textColor="#000000" />
+
+        <!-- 하단으로 스크롤 이동하는 버튼 -->
+        <Button
+            android:id="@+id/Button_2"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:background="#DDDDDD"
+            android:text="딸기 준비물"
+            android:textSize="25sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- 딸기 키우기 준비물 레이아웃 -->
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="딸기 키우기 준비물"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        android:onClick="onImageViewClick"
+        app:srcCompat="@drawable/seedling" />
+
+    <TextView
+        android:id="@+id/textView1.1"
+        android:layout_width="30dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-70dp"
+        android:text="모종"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="-80dp"
+        android:clickable="true"
+        android:onClick="onImageView5Click"
+        app:srcCompat="@drawable/sedling2" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="-115dp"
+        android:text="종류별"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="onImageView6Click"
+        app:srcCompat="@drawable/seddling3" />
+
+    <TextView
+        android:id="@+id/textView1.2"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:text="흙"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="-50dp"
+        android:clickable="true"
+        android:onClick="onImageView7Click"
+        app:srcCompat="@drawable/soil" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="-70dp"
+        android:clickable="true"
+        android:onClick="onImageView8Click"
+        app:srcCompat="@drawable/soil2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="-130dp"
+        android:text="종류별"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+
+    <TextView
+        android:id="@+id/textView1.3"
+        android:layout_width="17dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="190dp"
+        android:text="화분"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="-60dp"
+        android:clickable="true"
+        android:onClick="onImageView9Click"
+        app:srcCompat="@drawable/flowerpot" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="-70dp"
+        android:clickable="true"
+        android:onClick="onImageView10Click"
+        app:srcCompat="@drawable/flowerpot2" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="-70dp"
+        android:clickable="true"
+        android:onClick="onImageView11Click"
+        app:srcCompat="@drawable/flowerpot3" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-110dp"
+        android:text="소"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="-30dp"
+        android:text="중"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="-30dp"
+        android:text="대"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+</LinearLayout>

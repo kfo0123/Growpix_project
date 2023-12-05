@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backlogo4"
+    android:orientation="vertical">
+
+    <!-- 여러 뷰들을 담은 ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <!-- 세로로 나열된 뷰들을 담은 LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true">
+
+            <!-- 수평으로 나열된 버튼들을 담은 LinearLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 첫 번째 버튼 -->
+                <Button
+                    android:id="@+id/Button_1"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="#00FF00"
+                    android:text="딸기 키우기"
+                    android:textSize="25sp"
+                    android:textColor="#000000" />
+
+                <!-- 두 번째 버튼 -->
+                <Button
+                    android:id="@+id/Button_2"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:text="딸기 준비물"
+                    android:textSize="25sp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- 뒤로 가기 버튼 -->
+            <TextView
+                android:id="@+id/mainback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뒤로"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="1dp" />
+
+            <!-- 딸기 키우는 방법 안내 레이아웃 -->
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="40dp"
+                android:text="딸기 키우는 방법"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- 딸기 키우는 방법 내용 -->
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/box_border2"
+                android:text="  *딸기의 꼭 필요한 준비물*\n\n 식물 모종, 화분 or 화분 받침,\n 갈망, 배양토, 마사토"
+                android:textSize="18sp"
+                android:textColor="#000000" />
+
+            <!-- 이미지뷰 -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/strawberry1" />
+
+
+
+
+<TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="1. 딸기의  환경 조성하기!\n\n
+딸기는 기본 흙이 아닌 비료가 섞인 상토를 써야 합니다 !\n\n
+식물을  모종 뿌리가  정도로 나머지 흙을 채워 줍니다!"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/strawberry2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="2. 딸기가 좋아하는 곳\n
+딸기는 양지바른 환경을 선호합니다.\n\n
+딸기가 건강할 수 있도록 통풍이 잘 되고 햇빛이 잘 들어오는 곳을 배치해 주세요.\n\n"
+                android:textSize="18sp"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/strawberry3" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="3. 딸기가 좋아하는 햇빛 및 온도\n\n
+딸기는 햇빛을 많이 받아야 합니다.\n\n
+햇볕이 잘 드는 장소를 선정해 주시고, 온도는 18~24도 정도가 적당합니다."
+                android:textSize="18sp"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Tip 잎이 말라 보인다면 햇볕을 쬐어주고 화분에 물을 듬뿍 주세요.\n\n"
+                android:textSize="18sp"
+                android:textColor="#F27B92" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/strawberry4" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="4. 딸기가 좋아하는 물 주기\n\n
+딸기는 수분을 좋아하므로 흙이 말라가면 물을 주세요.\n\n
+그러나 뿌리가 썩지 않도록 흙을 계속 흠뻑 적시지 않도록 주의해주세요.\n\n"
+                android:textSize="18sp"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="[12~2월] 휴면기\n
+기온이 떨어짐에 따라 딸기는 휴면기에 들어가게 되는 것입니다. 물을 줄 때는 따뜻한 날 오전 중에 주는 등의 배려를 합시다.\n
+[3~10월] 생장기\n
+화분 바닥에서 물이 나올 정도로 푸짐하게 줍시다.\n
+특히 기온이 높은 시기에는 이른 아침이나 저녁의 시원한 시간대를 골라 충분히 물을 줍니다.\n
+Tip. 질병 발생을 막기 위해 물을 줄 때 흙이 잎에 튀지 않도록 주의 해주세요.\n\n"
+                android:textSize="18sp"
+                android:textColor="#F27B92" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/strawberry5" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="5. 딸기의 비료 사용법\n\n
+성장기에는 약 2주마다 액상 비료를 사용하여 딸기에 필요한 영양분을 공급해 주면 딸기가 건강하게 자랍니다 !"
+                android:textSize="18sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Tip 딸기의 잎이 시들었다면 양분이 조금 부족할 뿐입니다! 비료를 주면 딸기가 건강을 되찾고 훨씬 건강 해집니다 !\n
+*썩은 잎가 시든 잎은 다릅니다 !*\n\n"
+                android:textSize="18sp"
+                android:textColor="#F27B92" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/strawberry6" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="6. 딸기의 번식력\n\n
+딸기는 번식을 위해 잎에서 나는 뿌리인 러너를 만들어 냅니다.\n\n
+만약! 다른 곳에 모종을 삽목하고 싶으면 뿌리를 내릴 수 있도록 다른 화분과 상토를 준비한 후 뿌리가 내릴 수 있도록 잘 고정해 주세요 !\n\n"
+                android:textSize="18sp"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="*실하게 맺은 열매를 보고 싶다면 러너 줄기를 잘라주세요*"
+                android:textSize="18sp"
+                android:textColor="#F27B92" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/strawberry7" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="7.딸기의 잎 정리 법\n\n
+딸기는 자라가면서 불필요한 잎이 자주 생깁니다.\n\n
+식물의 중앙 부분을 통해하는 잎을 제거해 줘야 합니다.\n\n
+불필요한 잎을 제거해 주지 않으면 딸기의 영양분이 불필요한 잎으로 갈 수 있음으로 제거해 줘야 합니다.\n"
+                android:textSize="18sp"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="*열매를 맺기 위해 양분을 쓰기 때문에 잎에 양분이 부족해 썩을 수도 있습니다! 그럴 경우에는 새잎이 자랄 수 있도록 썩은 잎을 제거해 주세요 !*"
+                android:textSize="18sp"
+                android:textColor="#F27B92" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/strawberry8" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="8.딸기의 병해충 관리법\n\n
+주기적으로 딸기를 검사하여 병해충이 발견되면 빠른 조치를 취해주셔야 합니다.\n\n
+병해충을 치료하기 위해선 영양제나 친환경적인 방법을 사용하시면 됩니다.\n\n"
+                android:textSize="18sp"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/strawberry9" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="9.딸기의 수확 법\n\n
+딸기가 익으면 붉게 변하고 부드러워지므로 주기적으로 확인하여 딸기의 익음이 확인되면 조심스럽게 수확해 주시면 됩니다."
+                android:textSize="18sp"
+                android:textColor="#000000" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

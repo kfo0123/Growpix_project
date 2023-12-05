@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backlogo4">
+
+    <!-- 로고 이미지뷰 -->
+
+    <!-- 뒤로가기 텍스트뷰 -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="500dp"
+        android:layout_height="700dp"
+        android:src="@drawable/whitelogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/mainback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp" />
+
+    <!-- 첫 번째 네모 상자와 딸기 이미지 -->
+    <ImageView
+        android:id="@+id/select"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/select2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <!-- 두 번째 딸기 이미지 -->
+
+    <!-- 세 번째 딸기 이미지 -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/strawberry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113" />
+
+
+    <!-- 첫 번째 텍스트 -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/strawberry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <TextView
+        android:id="@+id/textSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="딸기"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/select"
+        app:layout_constraintEnd_toEndOf="@id/select"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@id/select"
+        app:layout_constraintTop_toTopOf="@id/select"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <!-- 두 번째 네모 상자 -->
+    <ImageView
+        android:id="@+id/stselect2"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
+
+    <!-- 두 번째 텍스트 -->
+    <TextView
+        android:id="@+id/textSelect2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="딸기 키우기"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/stselect2"
+        app:layout_constraintEnd_toEndOf="@id/stselect2"
+        app:layout_constraintStart_toStartOf="@id/stselect2"
+        app:layout_constraintTop_toTopOf="@id/stselect2" />
+
+    <!-- 세 번째 네모 상자 -->
+    <ImageView
+        android:id="@+id/stselect3"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.638" />
+
+    <!-- 세 번째 텍스트 -->
+    <TextView
+        android:id="@+id/textSelect3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="딸기 관리하기"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/stselect3"
+        app:layout_constraintEnd_toEndOf="@id/stselect3"
+        app:layout_constraintStart_toStartOf="@id/stselect3"
+        app:layout_constraintTop_toTopOf="@id/stselect3" />
+
+    <!-- 네 번째 네모 상자 -->
+    <ImageView
+        android:id="@+id/stselect4"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838" />
+
+    <!-- 네 번째 텍스트 -->
+    <TextView
+        android:id="@+id/textSelect4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="딸기 진단하기"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/stselect4"
+        app:layout_constraintEnd_toEndOf="@id/stselect4"
+        app:layout_constraintStart_toStartOf="@id/stselect4"
+        app:layout_constraintTop_toTopOf="@id/stselect4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
